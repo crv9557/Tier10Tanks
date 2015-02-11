@@ -1,0 +1,1 @@
+var tanks = { "american": ['T92','T57 Heavy','T110E3','T110E4','M48 Patton' ,'T110E5']};
