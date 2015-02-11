@@ -1,1 +1,8 @@
-var tanks = { "american": ['T92','T57 Heavy','T110E3','T110E4','M48 Patton' ,'T110E5']};
+//Connor Ring MappingCodeAssignment
+//Created and edited February 10th, 2015
+
+//This code maps out the "top dog" tanks from the popular free-to-play video game "World of Tanks". It currently serves no function but to map each of these tanks as 'elements' in a data set.
+
+//All tanks listed are Tier 10 (highest level of tanks available in the game), and are organized by country, as well as added in order based on their tech tree (first tank is at the top of the tree, next tank is one tree lower, and so on.) This does NOT say which is a better tank by any means.
+
+var tanks = { "american": ['T92','T57 Heavy','T110E3','T110E4','M48 Patton' ,'T110E5'], "british": ['FV4202','FV215b (183)','FV215b', 'FV4005 Stage II', ' Conqueror Gun Carriage'] };
