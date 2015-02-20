@@ -1,0 +1,60 @@
+//Connor Ring
+//February 18th, 2015
+//Tier 10 Tanks Traits
+
+//The point of this is to list off the tanks, their guns, engines, radios, and track types. For the unaware, each tank has its own gun, engine, radio, and tracks. Some tanks share the same equipment, but most are varied. Each array lists each tank and its equipment in order, and thus each array will pull the information from each array based on where each character is located in their respective array.
+
+// List the name of the tanks
+var tank = [
+{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
+{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
+{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
+","E50 Ausf. M","Leopard 1"]}
+{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
+55 58"]}
+{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
+IS-4","Object 261"]}
+
+//List the gun on the tank
+var gun = [
+{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
+{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
+{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
+","E50 Ausf. M","Leopard 1"]}
+{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
+55 58"]}
+{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
+IS-4","Object 261"]}
+
+// List the engine on the tank
+var engine = [
+{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
+{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
+{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
+","E50 Ausf. M","Leopard 1"]}
+{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
+55 58"]}
+{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
+IS-4","Object 261"]}
+
+//List the radio equipped
+var radio = [
+{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
+{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
+{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
+","E50 Ausf. M","Leopard 1"]}
+{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
+55 58"]}
+{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
+IS-4","Object 261"]}
+
+// List the tracks that the tank uses
+var tracks = [
+{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
+{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
+{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
+","E50 Ausf. M","Leopard 1"]}
+{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
+55 58"]}
+{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
+IS-4","Object 261"]}
