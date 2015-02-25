@@ -2,59 +2,38 @@
 //February 18th, 2015
 //Tier 10 Tanks Traits
 
-//The point of this is to list off the tanks, their guns, engines, radios, and track types. For the unaware, each tank has its own gun, engine, radio, and tracks. Some tanks share the same equipment, but most are varied. Each array lists each tank and its equipment in order, and thus each array will pull the information from each array based on where each character is located in their respective array.
+//Edit (2/25/2015): Changed the layout of the ENTIRE app. Looks a bit better.
 
-// List the name of the tanks
-var tank = [
-{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
-{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
-{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
-","E50 Ausf. M","Leopard 1"]}
-{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
-55 58"]}
-{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
-IS-4","Object 261"]}
+// Create an array for the tanks and their properties.
+var Tanks = [
+{"Name":"T92","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"T57 Heavy","Damage":"300-500 HP","Penetration":"194-323 mm","Engine":"35 km/h","Weight":"54.93 tons"},
+{"Name":"T110E4","Damage":"563-938 HP","Penetration":"221-369 mm","Engine":"35 km/h","Weight":"64.73 tons"},
+{"Name":"T110E3","Damage":"563-938 HP","Penetration":"221-369 mm","Engine":"24 km/h","Weight":"76.73 tons"},
+{"Name":"M48A1 Patton","Damage":"293-488 HP","Penetration":"201-335 mm","Engine":"45 km/h","Weight":"48.17 tons"},
+{"Name":"T110E5","Damage":"300-500 HP","Penetration":"194-323 mm","Engine":"37 km/h","Weight":"53.76 tons"},
+{"Name":"FV4202","Damage":"293-488 HP","Penetration":"201-335 mm","Engine":"40 km/h","Weight":"40 tons"},
+{"Name":"FV215b (183)","Damage":"863-1438 HP","Penetration":"233-388 mm","Engine":"34 km/h","Weight":"60 tons"},
+{"Name":"FV215b","Damage":"300-500 HP","Penetration":"194-324 mm","Engine":"34 km/h","Weight":"70 tons"},
+{"Name":"FV4005 Stage II","Damage":"863-1438 HP","Penetration":"233-388 mm","Engine":"35 km/h","Weight":"50.8 tons"},
+{"Name":"Conqueror Gun Carriage","Damage":"1650-2750 HP","Penetration":"88-146 mm","Engine":"34 km/h","Weight":"55 tons"},
+{"Name":"G.W.E 100","Damage":"1500-2500 HP","Penetration":"79-131 mm","Engine":"40 km/h","Weight":"87 tons"},
+{"Name":"Waffentrager auf E 100","Damage":"563-938 HP","Penetration":"176-294 mm","Engine":"40 km/h","Weight":"98.05 tons"},
+{"Name":"Jagdpanzer E 100","Damage":"788-1313 HP","Penetration":"224-374 mm","Engine":"30 km/h","Weight":"133.94 tons"},
+{"Name":"Maus","Damage":"368-613 HP","Penetration":"185-308 mm","Engine":"20 km/h","Weight":"188.98 tons"},
+{"Name":"E 100","Damage":"563-938 HP","Penetration":"177-294 mm","Engine":"30 km/h","Weight":"129.69 tons"},
+{"Name":"E 50 Ausf. M","Damage":"293-488 HP","Penetration":"203-338 mm","Engine":"60 km/h","Weight":"62.31 tons"},
+{"Name":"Leopard 1","Damage":"293-488 HP","Penetration":"201-335 mm","Engine":"65 km/h","Weight":"40 tons"},
+{"Name":"AMX 50 Foch (155)","Damage":"563-938 HP","Penetration":"220-366 mm","Engine":"50 km/h","Weight":"57.6 tons"},
+{"Name":"AMX 50 B","Damage":"300-500 HP","Penetration":"193-321 mm","Engine":"65 km/h","Weight":"62.21 tons"},
+{"Name":"Bat.-Chatillon 25 t","Damage":"293-488 HP","Penetration":"195-324 mm","Engine":"65 km/h","Weight":"24.48 tons"},
+{"Name":"Bat.-Chatillon 155 58","Damage":"938-1563 HP","Penetration":"71-119 mm","Engine":"62 km/h","Weight":"35 tons"},
+{"Name":"Object 268","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"Object 263","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"Object 430","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"T-62A","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"Object 140","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"IS-7","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"IS-4","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
+{"Name":"Object 261","Damage":"1688-2813 HP","Penetration":"90-150 mm","Engine":"32 km/h","Weight":"57.84 tons"},
 
-//List the gun on the tank
-var gun = [
-{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
-{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
-{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
-","E50 Ausf. M","Leopard 1"]}
-{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
-55 58"]}
-{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
-IS-4","Object 261"]}
-
-// List the engine on the tank
-var engine = [
-{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
-{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
-{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
-","E50 Ausf. M","Leopard 1"]}
-{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
-55 58"]}
-{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
-IS-4","Object 261"]}
-
-//List the radio equipped
-var radio = [
-{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
-{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
-{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
-","E50 Ausf. M","Leopard 1"]}
-{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
-55 58"]}
-{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
-IS-4","Object 261"]}
-
-// List the tracks that the tank uses
-var tracks = [
-{"american":["T92","T57 Heavy","T110E4","T110E3","M48A1 Patton","T110E5"]}
-{"british":["FV4202","FV215b (183)","FV215b","FV4005 Stage II","Conqueror GC"]}
-{"german":["G.W.E 100","Waffentrager auf E 100","Jagdpanzer E 100","Maus","E 100
-","E50 Ausf. M","Leopard 1"]}
-{"french":["AMX 50 Foch (155)","AMX 50 B","Bat.-Chatillon 25t","Bat.-Chatillon 1
-55 58"]}
-{"russian":["Object 268","Object 263","Object 430","T-62A","Object 140","IS-7","
-IS-4","Object 261"]}
