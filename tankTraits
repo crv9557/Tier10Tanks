@@ -36,4 +36,6 @@ var Tanks = [
 {"Name":"IS-7","Damage":"368-613 HP","Penetration":"188-313 mm","Engine":"59.6 km/h","Weight":"68.19 tons"},
 {"Name":"IS-4","Damage":"293-488 HP","Penetration":"131-219 mm","Engine":"43 km/h","Weight":"60.02 tons"},
 {"Name":"Object 261","Damage":"1275-2125 HP","Penetration":"77-128 mm","Engine":"50 km/h","Weight":"59.1 tons"},
-
+{"Name":"121","Damage":"330-550 HP","Penetration":"194-323 mm","Engine":"56 km/h","Weight":"39 tons"},
+{"Name":"113","Damage":"330-550","Penetration":"187-311 mm","Engine":"50 km/h","Weight":"45 tons"},
+{"Name":"STB-1","Damage":"293-488 HP","Penetration":"194-323 mm", "Engine":"53 km/h","Weight":"37.4 tons"},
