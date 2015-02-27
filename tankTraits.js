@@ -16,7 +16,7 @@ var Tanks = [ "[\n  " + [
 '{Name:"T110E5",Damage:"300-500 HP",Penetration:"194-323 mm",Engine:"37 km/h",Weight:"53.76 tons"}',
 '{Name:"FV4202",Damage:"293-488 HP",Penetration:"201-335 mm",Engine:"40 km/h",Weight:"40 tons"}',
 '{Name:"FV215b (183)",Damage:"863-1438 HP",Penetration:"233-388 mm",Engine:"34 km/h",Weight:"60 tons"}',
-{Name:"FV215b",Damage:"300-500 HP",Penetration:"194-324 mm",Engine:"34 km/h",Weight:"70 tons"},
+'{Name:"FV215b",Damage:"300-500 HP",Penetration:"194-324 mm",Engine:"34 km/h",Weight:"70 tons"}',
 '{Name:"FV4005 Stage II",Damage:"863-1438 HP",Penetration:"233-388 mm",Engine:"35 km/h",Weight:"50.8 tons"}',
 '{Name:"Conqueror Gun Carriage",Damage:"1650-2750 HP",Penetration:"88-146 mm",Engine:"34 km/h",Weight:"55 tons"}',
 '{Name:"G.W.E 100",Damage:"1500-2500 HP",Penetration:"79-131 mm",Engine:"40 km/h",Weight:"87 tons"}',
