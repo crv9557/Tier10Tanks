@@ -5,4 +5,4 @@ Filter: For now, it runs on the "Weight" data, searching for anything that is mo
 
 Map: As this is a video game with active players, sometimes players will make it very clear to the developers that some tanks are outright too good or too bad for them to be played in a fair fight. To counteract this, this game undergoes repeated updates that change the numerical values in order to create a sense of balance. My map function will basically act like this: an update to the game. I won't change their names or how many are present, but I will change what their values are.
 
-Reduce: My goal is to simply have the program use the "Name" data to pinpoint a certain tank and its values.
+Reduce: This will look at the weight of a tank and look to see which tanks will go over a certain weight. Anything that isn't over the weight isn't shown.
